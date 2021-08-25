@@ -24,7 +24,7 @@ content/themes/*
 
 !content/plugins
 content/plugins/*
-!content/plugins/portfoliocd 
+!content/plugins/yaelPortfolio 
 #!/content/plugins/custom_plugin
 
 
