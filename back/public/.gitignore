@@ -20,7 +20,7 @@ content/*
 
 !content/themes
 content/themes/*
-!content/themes/portfolio
+!content/themes/yaelPortfolio
 
 !content/plugins
 content/plugins/*
