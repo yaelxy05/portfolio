@@ -24,7 +24,7 @@ content/themes/*
 
 !content/plugins
 content/plugins/*
-!content/plugins/portfolio
+!content/plugins/portfoliocd 
 #!/content/plugins/custom_plugin
 
 
