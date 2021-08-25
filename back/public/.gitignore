@@ -18,10 +18,13 @@ wp-config.php.bak
 content/*
 !wp-content
 
-content/themes/*
 !content/themes
-#!/content/themes/custom_theme
+content/themes/*
+!content/themes/portfolio
 
+!content/plugins
 content/plugins/*
-!content/plugins/
+!content/plugins/portfolio
 #!/content/plugins/custom_plugin
+
+
