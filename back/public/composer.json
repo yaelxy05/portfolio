@@ -9,10 +9,10 @@
 
     "extra": {
         "installer-paths": {
-            "content/plugins/{$name}/": [
+            "wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
-            "content/themes/{$name}/": [
+            "wp-content/themes/{$name}/": [
                 "type:wordpress-theme"
             ]
         },
@@ -40,13 +40,13 @@
         "activate-plugins": "wp plugin activate --all",
         "activate-htaccess": [
             "wp rewrite structure '/%year%/%monthnum%/%postname%/' --hard",
-            "chgrp jdjh3261 .htaccess",
-            "chmod 775 .htaccess"
+            "sudo chgrp www-data .htaccess",
+            "sudo chmod 775 .htaccess"
         ],
         "chmod": [
-            "chgrp -R jdjh3261 .",
-            "find . -type f -exec chmod 644 {} +",
-            "find . -type d -exec chmod 755 {} +"
+            "sudo chgrp -R www-data .",
+            "sudo find . -type f -exec chmod 664 {} +",
+            "sudo find . -type d -exec chmod 774 {} +"
         ],
 
         "wp-install-jwt": "wp plugin install jwt-authentication-for-wp-rest-api --activate",
